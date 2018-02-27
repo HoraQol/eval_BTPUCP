@@ -1,0 +1,11 @@
+Apache Cassandra es, en pocas palabras, una base de datos distribuida apropiada para cantidades de datos considerablemente grandes, debido a su modelo de almacenamiento de clave-valor (concepto similar que los diccionarios y las tablas hash). Como lo indica la página web de Cassandra, "la escalabilidad lineal y tolerancia a fallas comprobada en hardware mercantil o en infraestructura de la nube convierten a Cassandra en una plataforma perfecto para datos de misión crítica" [A]. Es por su propiedad de manejo de cantidad de datos grande la razón de ser utilizada por empresas que manejan flujos o volúmenes de datos considerablemente gigantes, tales como Facebook, Twitter, Netflix, entre otros.
+
+El acceso a los datos se hace a través de la presencia de 'row keys' y familias de columnas, en reemplazo de tablas, por lo que "el modelo se basa en las consultas que se realizará en la aplicación, y no en la relación de datos entre sí" [B]. Por esta razón, Cassandra no sería util si se desea trabajar con datos relacionales y/o normalizados, pero sí sería extremadamente útil si queremos un veloz acceso de datos.
+
+Para realizar la conexión entre Cassandra y Python existen adaptadores cliente (client drivers), que deben ser instalados para su respectivo uso. El más conocido y funcional es el Datastax Python Driver [C].
+
+
+Fuentes:
+[A] Apache Cassadra (página web): http://cassandra.apache.org/
+[B] Panel Sistemas. "Por qué Cassandra no es una base de datos cualquiera": https://www.panel.es/blog/por-que-cassandra-no-es-una-base-de-datos-cualquiera/
+[C] Datastax Academy. "Getting started with Apache Cassandra and Python": https://academy.datastax.com/resources/getting-started-apache-cassandra-and-python-part-i
